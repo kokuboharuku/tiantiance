@@ -1,0 +1,123 @@
+:root {
+  /** 主题颜色 */
+
+  --vp-c-brand-1: #A758A5;
+  --vp-c-brand-2: #A758A5;
+  
+  /*
+  --vp-c-brand-1: #5086a1;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #8cccd5;
+  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
+  */
+
+  /** 背景颜色 */
+
+  /*
+  --vp-c-bg: #fff;
+  --vp-c-bg-alt: #f6f6f7;
+  --vp-c-bg-elv: #fff;
+  --vp-c-bg-soft: #f6f6f7;
+  */
+
+  /** 文本颜色 */
+
+  /*
+  --vp-c-text-1: rgba(60, 60, 67);
+  --vp-c-text-2: rgba(60, 60, 67, 0.78);
+  --vp-c-text-3: rgba(60, 60, 67, 0.56);
+  */
+}
+
+/** 深色模式 */
+[data-theme="dark"] {
+  /*
+  --vp-c-brand-1: #8cccd5;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #5086a1;
+  --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
+  */
+
+  /*
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-alt: #161618;
+  --vp-c-bg-elv: #202127;
+  --vp-c-bg-soft: #202127;
+  */
+
+  /*
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-2: rgba(235, 235, 245, 0.6);
+  --vp-c-text-3: rgba(235, 235, 245, 0.38);
+  */
+}
+
+/* Only text stars in editorial rating lines and generated score titles. */
+:root { --ttc-rating-star: #18B38A; --ttc-rating-shadow: none; }
+[data-theme="dark"] { --ttc-rating-star: #4DE0B1; --ttc-rating-shadow: 0 0 4px rgba(77, 224, 177, 0.32); }
+.ttc-rating-star { color: var(--ttc-rating-star); font-weight: 650; text-shadow: var(--ttc-rating-shadow); }
+
+/* ttc-review-excerpt: retain the theme excerpt and show up to three lines. */
+.vp-post-item .excerpt > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.ttc-rating-excerpt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.ttc-rating-dimension { white-space: nowrap; }
+.ttc-rating-label { color: var(--vp-c-text-2); }
+.ttc-rating-excerpt .ttc-rating-star { letter-spacing: 1px; }
+
+.ttc-rating-star.ttc-rating-empty { text-shadow: none; }
+
+.vp-post-item .excerpt > p + .ttc-rating-excerpt { margin-top: 10px; }
+
+/* Use the website logo silhouette, retaining the original important icon purple. */
+.vp-doc .hint-container.important.ttc-editorial-block .hint-container-title::before {
+  background-image: none;
+  background-color: #8e5cd9;
+  -webkit-mask: url('/ttc-logo.svg') center / contain no-repeat;
+  mask: url('/ttc-logo.svg') center / contain no-repeat;
+}
+
+/* Center the logo and title on the same line, without the old icon offset. */
+.vp-doc .ttc-editorial-block .hint-container-title {
+  display: flex;
+  align-items: center;
+}
+.vp-doc .hint-container.important.ttc-editorial-block .hint-container-title::before {
+  flex: 0 0 1.25em;
+  transform: none;
+}
+
+/* Root filter hints can change the containing block of fixed descendants.
+   Let the browser manage compositing; keep the theme's appearance transitions. */
+html[data-theme] {
+  will-change: auto;
+}
+
+/* Article navigation previously scrolled away below the desktop breakpoint.
+   Sticky preserves its existing place in document flow and the outline offset. */
+@media (max-width: 959px) {
+  .theme-plume.vp-layout > .vp-nav:not(.fixed) {
+    position: sticky;
+    top: var(--vp-layout-top-height, 0px);
+  }
+  .theme-plume.vp-layout > .vp-local-nav {
+    top: calc(var(--vp-layout-top-height, 0px) + var(--vp-nav-height));
+  }
+  html.layout-doc {
+    scroll-padding-top: calc(var(--vp-nav-height) + 50px);
+  }
+}
+
+/* Independent TTC snapshot trial. */
+body::before { content: "TTC · GDOG 部署试验版｜独立快照，非正式站，不接收业务写入"; display: block; padding: 9px 16px; text-align: center; background: #fff0bc; color: #43320c; font-size: 13px; line-height: 1.6; position: relative; z-index: 100; }
