@@ -1,4 +1,4 @@
-name: Validate and publish tiantiance trial
+name: Validate and publish tiantiance
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: tiantiance-trial-${{ github.ref }}
+  group: tiantiance-pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   build:
