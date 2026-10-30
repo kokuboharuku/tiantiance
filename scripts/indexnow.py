@@ -14,7 +14,7 @@ def main():
    print('No published page changes; IndexNow skipped.');return
  key=Path('indexnow-key.txt').read_text().strip()
  if not re.fullmatch('[a-zA-Z0-9-]{8,128}',key) or any(not u.startswith(BASE+'/') for u in urls) or len(urls)>10000:raise ValueError('Invalid submission scope')
- payload={'host':'gd.tiantiance.blog','key':key,'keyLocation':BASE+'/'+key+'.txt','urlList':sorted(set(urls))}
+ payload={'host':'tiantiance.blog','key':key,'keyLocation':BASE+'/'+key+'.txt','urlList':sorted(set(urls))}
  if args.dry_run:print(json.dumps({'count':len(payload['urlList']),'host':payload['host']}));return
  req=urllib.request.Request('https://api.indexnow.org/indexnow',data=json.dumps(payload).encode(),headers={'Content-Type':'application/json; charset=utf-8','User-Agent':'TTC-IndexNow/1.0'},method='POST')
  with urllib.request.urlopen(req,timeout=30) as response:status=response.status

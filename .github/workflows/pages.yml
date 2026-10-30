@@ -1,4 +1,4 @@
-name: Validate and publish TTC trial
+name: Validate and publish TTC
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: ttc-trial-${{ github.ref }}
+  group: ttc-pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   build:
