@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
@@ -38,3 +40,19 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+  notify-search:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: .artifacts
+      - run: mkdir -p .published && tar -xf .artifacts/artifact.tar -C .published
+      - run: python3 scripts/indexnow.py --root .published
+        env:
+          PREVIOUS_SHA: ${{ github.event.before }}

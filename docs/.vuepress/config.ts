@@ -36,7 +36,7 @@ export default defineUserConfig({
     // 配置站点图标
 //    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/ttc-logo.svg' }],
-      ['meta', { name: 'robots', content: 'noindex,nofollow' }]
+      ['link', { rel: 'alternate', type: 'application/rss+xml', title: '天天测 RSS', href: 'https://gd.tiantiance.blog/feed.xml' }]
   ],
 
   bundler: viteBundler({

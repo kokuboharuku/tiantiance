@@ -1,5 +1,6 @@
 import { defineClientConfig } from 'vuepress/client'
 import { watch } from 'vue'
+import TrialLayout from './theme/components/TrialLayout.vue'
 import { usePostsData } from 'vuepress-theme-plume/composables'
 import type { ThemePostsItem } from 'vuepress-theme-plume/shared'
 import ranking from '../../data/weekly-ranking.json'
@@ -13,6 +14,7 @@ import ranking from '../../data/weekly-ranking.json'
  import './theme/styles/custom.css'
 
 export default defineClientConfig({
+  layouts: { Layout: TrialLayout },
   setup() {
     const posts = usePostsData()
     const weeklyPosts = ranking.posts as ThemePostsItem[]
