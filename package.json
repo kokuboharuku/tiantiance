@@ -6,8 +6,8 @@
   "author": "kokuboharuku",
   "license": "MIT",
   "scripts": {
-    "docs:build": "vuepress build docs --clean-cache --clean-temp && node scripts/finalize.mjs",
-    "docs:dev": "vuepress dev docs",
+    "docs:build": "node scripts/prepare.mjs && vuepress build docs --clean-cache --clean-temp && node scripts/finalize.mjs",
+    "docs:dev": "node scripts/prepare.mjs && vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "npx vp-update",

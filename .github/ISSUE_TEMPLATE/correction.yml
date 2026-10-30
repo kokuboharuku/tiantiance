@@ -1,0 +1,17 @@
+name: 内容纠错
+description: 反馈测评内容、链接、图片或页面问题
+title: "内容纠错："
+body:
+  - type: input
+    id: article
+    attributes:
+      label: 文章或页面链接
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题及观察时间
+      description: 请说明具体位置、实际表现及期望结果，勿附私人订阅链接或凭据。
+    validations:
+      required: true
