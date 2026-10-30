@@ -1,20 +1,20 @@
-# 天天测 · GDOG 独立试验版
+# 天天测
 
 [![构建与部署](https://github.com/kokuboharuku/tiantiance/actions/workflows/pages.yml/badge.svg)](https://github.com/kokuboharuku/tiantiance/actions/workflows/pages.yml)
 
-公开测评与周榜的独立静态阅读版本，使用 VuePress、GitHub Actions 与 Pages。
+公开测评与周榜的静态阅读网站，使用 VuePress、GitHub Actions 与 Pages。
 
-**[打开网站](https://gd.tiantiance.blog/)** · [Wiki](https://github.com/kokuboharuku/tiantiance/wiki) · [讨论](https://github.com/kokuboharuku/tiantiance/discussions) · [内容纠错](https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml)
+**[打开网站](https://tiantiance.blog/)** · [Wiki](https://github.com/kokuboharuku/tiantiance/wiki) · [讨论](https://github.com/kokuboharuku/tiantiance/discussions) · [内容纠错](https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml)
 
 ## 阅读入口
 
-- [每周评分榜](https://gd.tiantiance.blog/weekly-ranking/)
-- [测评专题](https://gd.tiantiance.blog/topics/)与[历史归档](https://gd.tiantiance.blog/archive/)
-- [RSS 订阅](https://gd.tiantiance.blog/subscribe/)与[阅读说明](https://gd.tiantiance.blog/reading/)
+- [每周评分榜](https://tiantiance.blog/weekly-ranking/)
+- [测评专题](https://tiantiance.blog/topics/)与[历史归档](https://tiantiance.blog/archive/)
+- [RSS 订阅](https://tiantiance.blog/subscribe/)与[阅读说明](https://tiantiance.blog/reading/)
 
 ## 当前内容
 
-文章与周榜来自 2026-10-29 的公开快照，暂不自动同步正式站，也不重新计算周榜。部分历史图片依赖原有外部地址。评分与结论反映文章所述时间，请结合测试条件与日期阅读。
+文章与周榜由现有天天测内容流程维护，同步后通过 Actions 发布；页面访问不重新计算周榜。部分历史图片依赖原有外部地址。评分与结论反映文章所述时间，请结合测试条件与日期阅读。
 
 ## 开发与发布
 

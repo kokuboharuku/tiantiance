@@ -120,4 +120,3 @@ html[data-theme] {
 }
 
 /* Independent TTC snapshot trial. */
-body::before { content: "TTC · GDOG 部署试验版｜独立快照，非正式站，不接收业务写入"; display: block; padding: 9px 16px; text-align: center; background: #fff0bc; color: #43320c; font-size: 13px; line-height: 1.6; position: relative; z-index: 100; }

@@ -51,7 +51,7 @@ export default defineThemeConfig({
   //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
   //   copyright: '',
   // },
-    footer: { message: '<a href="/reading/">阅读说明</a> · <a href="/subscribe/">RSS 订阅</a> · <a href="https://github.com/kokuboharuku/tiantiance/wiki">Wiki</a> · <a href="https://github.com/kokuboharuku/tiantiance/discussions">讨论</a> · <a href="https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml">纠错</a>', copyright: '天天测 · GDOG 独立试验版' },
+    footer: { message: '<a href="/reading/">阅读说明</a> · <a href="/subscribe/">RSS 订阅</a> · <a href="https://github.com/kokuboharuku/tiantiance/wiki">Wiki</a> · <a href="https://github.com/kokuboharuku/tiantiance/discussions">讨论</a> · <a href="https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml">纠错</a>', copyright: '天天测' },
 
   /**
    * @see https://theme-plume.vuejs.press/config/basic/#profile

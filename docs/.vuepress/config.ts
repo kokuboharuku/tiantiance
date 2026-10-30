@@ -36,7 +36,7 @@ export default defineUserConfig({
     // 配置站点图标
 //    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/ttc-logo.svg' }],
-      ['link', { rel: 'alternate', type: 'application/rss+xml', title: '天天测 RSS', href: 'https://gd.tiantiance.blog/feed.xml' }]
+      ['link', { rel: 'alternate', type: 'application/rss+xml', title: '天天测 RSS', href: 'https://tiantiance.blog/feed.xml' }]
   ],
 
   bundler: viteBundler({
@@ -46,7 +46,7 @@ export default defineUserConfig({
     
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://gd.tiantiance.blog',
+    hostname: 'https://tiantiance.blog',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',

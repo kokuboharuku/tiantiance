@@ -1,7 +1,7 @@
 """Notify changed public URLs after successful deployment; no private credentials."""
 import argparse,json,os,re,subprocess,urllib.request,urllib.error
 from pathlib import Path
-BASE='https://gd.tiantiance.blog'
+BASE='https://tiantiance.blog'
 def main():
  p=argparse.ArgumentParser();p.add_argument('--root',default='.published');p.add_argument('--dry-run',action='store_true');args=p.parse_args()
  previous=os.environ.get('PREVIOUS_SHA',''); root=Path(args.root)

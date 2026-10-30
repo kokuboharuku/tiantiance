@@ -6,7 +6,7 @@ import articles from '../../../../data/articles.json'
 const {page}=useData()
 const current=computed(()=>articles.find(a=>a.path===page.value.path))
 const related=computed(()=>current.value?articles.filter(a=>a.path!==current.value!.path).sort((a,b)=>Number(b.merchant===current.value!.merchant)-Number(a.merchant===current.value!.merchant)||b.date.localeCompare(a.date)).slice(0,3):[])
-const url=computed(()=>`https://gd.tiantiance.blog${page.value.path}`)
+const url=computed(()=>`https://tiantiance.blog${page.value.path}`)
 const discussion=computed(()=>`https://github.com/kokuboharuku/tiantiance/discussions/new?category=q-a&title=${encodeURIComponent(page.value.title)}&body=${encodeURIComponent(url.value)}`)
 const correction=computed(()=>`https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml&title=${encodeURIComponent('内容纠错：'+page.value.title)}&article=${encodeURIComponent(url.value)}`)
 const copied=ref(false), fallback=ref(false)
