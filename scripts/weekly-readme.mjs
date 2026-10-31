@@ -30,7 +30,7 @@ export function renderWeeklyReadme(snapshot) {
 
 > 每天测试机场和免费节点。
 
-天天测（TTC）持续记录机场和免费节点的实测表现，保留每次测评的具体评价与多维评分，方便比较不同服务，也方便回看同一服务在不同时期的表现。
+天天测持续记录机场和免费节点的实测表现，保留每次测评的具体评价与多维评分，方便比较不同服务，也方便回看同一服务在不同时期的表现。
 
 [访问网站](https://tiantiance.blog/) · [每周评分榜](https://tiantiance.blog/weekly-ranking/) · [RSS 订阅](https://tiantiance.blog/feed.xml)
 
