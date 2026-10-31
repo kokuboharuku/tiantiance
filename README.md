@@ -1,23 +1,63 @@
-# 天天测
+# 每周评分榜
 
-[![构建与部署](https://github.com/kokuboharuku/tiantiance/actions/workflows/pages.yml/badge.svg)](https://github.com/kokuboharuku/tiantiance/actions/workflows/pages.yml)
+2026-10-26 周榜
 
-公开测评与周榜的静态阅读网站，使用 VuePress、GitHub Actions 与 Pages。
+## 1. [肯の机机场第4次测评 & 测速 ★ 15](https://tiantiance.blog/jccp/0208251842406/)
 
-**[打开网站](https://tiantiance.blog/)** · [Wiki](https://github.com/kokuboharuku/tiantiance/wiki) · [讨论](https://github.com/kokuboharuku/tiantiance/discussions) · [内容纠错](https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml)
+**评价：** 晚高峰测试，用户投稿，除了联通，其他两个运营商都非常不错，联通虽然稍微慢一点，但是够用且稳定
 
-## 阅读入口
+**打分：** 稳定：★★★★☆ · 速度：★★★★☆ · 延迟：★★★★★ · 性价比：★★☆☆☆
 
-- [每周评分榜](https://tiantiance.blog/weekly-ranking/)
-- [测评专题](https://tiantiance.blog/topics/)与[历史归档](https://tiantiance.blog/archive/)
-- [RSS 订阅](https://tiantiance.blog/subscribe/)与[阅读说明](https://tiantiance.blog/reading/)
+## 2. [千速云机场第3次测评 & 测速 ★ 15](https://tiantiance.blog/jccp/0205131857326/)
 
-## 当前内容
+**评价：** 晚高峰测速，三网入口，根据运营商解析，整体感觉挺不错的，长期能保持这个质量的话就很棒了，联通体验异常不错
 
-文章与周榜由现有天天测内容流程维护，同步后通过 Actions 发布；页面访问不重新计算周榜。部分历史图片依赖原有外部地址。评分与结论反映文章所述时间，请结合测试条件与日期阅读。
+**打分：** 稳定：★★★☆☆ · 速度：★★★★☆ · 延迟：★★★★☆ · 性价比：★★★★☆
 
-## 开发与发布
+## 3. [neverlose机场测评 & 测速 ★ 14](https://tiantiance.blog/jccp/0209301620226/)
 
-`npm ci` 后使用 `npm run docs:dev` 开发；发布检查为 `npm run docs:build && npm run verify`。PR 只构建验证，main 通过后由 Actions 发布 Pages，部署成功后通知 IndexNow。通知接受不代表搜索收录。
+**评价：** 晚高峰测试，新开不久的，国内阿里云入口，速度挺不错的，稳定性未知，新机场还是稍微谨慎一点比较好
 
-[参与维护](CONTRIBUTING.md) · [内容使用说明](CONTENT-LICENSE.md) · [路线图](https://github.com/kokuboharuku/tiantiance/wiki/Roadmap)
+**打分：** 稳定：★★★☆☆ · 速度：★★★★☆ · 延迟：★★★★☆ · 性价比：★★★☆☆
+
+## 4. [念云机场测评 & 测速 ★ 13](https://tiantiance.blog/jccp/0210060015376/)
+
+**评价：** 晚高峰测试，比上次又史诗级加强，三网速度都很不错，稳定性稍差一小点，延迟波动比较多
+
+**打分：** 稳定：★★★☆☆ · 速度：★★★★☆ · 延迟：★★★☆☆ · 性价比：★★★☆☆
+
+## 5. [Lumina机场测评 & 测速 ★ 13](https://tiantiance.blog/jccp/0210011330376/)
+
+**评价：** 晚高峰测试，不愧是goma，整体很不错，速度比上次又提升了不少，建议根据运营商选择合适的节点，25元100g
+
+**打分：** 稳定：★★★☆☆ · 速度：★★★☆☆ · 延迟：★★★★☆ · 性价比：★★★☆☆
+
+## 6. [Crush Cloud机场第3次测评 & 测速 ★ 13](https://tiantiance.blog/jccp/0203291500206/)
+
+**评价：** 纯v6机场，购买时候请注意自身网络是否支持，联通用户体验不错，便宜，4元150G。仅代表个人观点！
+
+**打分：** 稳定：★★★★☆ · 速度：★★★☆☆ · 延迟：★★☆☆☆ · 性价比：★★★★☆
+
+## 7. [Runway机场测评 & 测速 ★ 12](https://tiantiance.blog/jccp/0205132115336/)
+
+**评价：** 晚高峰测速，只有一个移动入口，整体一般，复用较多
+
+**打分：** 稳定：★★★☆☆ · 速度：★★★☆☆ · 延迟：★★★☆☆ · 性价比：★★★☆☆
+
+## 8. [TeraCloud机场测评 & 测速 ★ 12](https://tiantiance.blog/jccp/0203091648346/)
+
+**评价：** 晚高峰测试，移动用户请勿购买，联通和电信还不错，海外中转，性价比还可以，
+
+**打分：** 稳定：★★★☆☆ · 速度：★★★☆☆ · 延迟：★★☆☆☆ · 性价比：★★★★☆
+
+## 9. [DoriyaNetwork机场第2次测评 & 测速 ★ 12](https://tiantiance.blog/jccp/0202131209356/)
+
+**评价：** 晚高峰测试，入口比较多，以移动为主，电信用户体验相对较差，节点速度分层比较明显
+
+**打分：** 稳定：★★★☆☆ · 速度：★★☆☆☆ · 延迟：★★★★☆ · 性价比：★★★☆☆
+
+## 10. [乡野农家乐机场测评 & 测速 ★ 11](https://tiantiance.blog/jccp/0205091000216/)
+
+**评价：** 暂无评价。
+
+**打分：** 稳定：★★★☆☆ · 速度：★★☆☆☆ · 延迟：★★★☆☆ · 性价比：★★★☆☆
