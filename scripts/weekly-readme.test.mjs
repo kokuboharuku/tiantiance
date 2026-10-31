@@ -7,12 +7,12 @@ test('published frozen snapshot remains unchanged and contains only text reviews
   const before = JSON.stringify(snapshot)
   const output = renderWeeklyReadme(snapshot)
   assert.equal(JSON.stringify(snapshot), before)
-  assert.equal((output.match(/^## /gm) ?? []).length, snapshot.posts.length)
+  assert.equal((output.match(/^### /gm) ?? []).length, snapshot.posts.length)
   assert.equal((output.match(/\*\*打分：\*\*/g) ?? []).length, snapshot.posts.length)
   assert.ok(output.includes(snapshot.week))
   assert.ok(!/!\[|<img\b|badge\.svg|discussions|<span|<div/i.test(output))
   let position = -1
-  for (const post of snapshot.posts) { const next = output.indexOf(`## ${post.rank}. `); assert.ok(next > position); position = next }
+  for (const post of snapshot.posts) { const next = output.indexOf(`### ${post.rank}. `); assert.ok(next > position); position = next }
 })
 test('embedded images and active markup cannot become README content', () => {
   const data = structuredClone(snapshot)
