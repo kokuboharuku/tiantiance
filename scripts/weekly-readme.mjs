@@ -24,9 +24,34 @@ export function renderWeeklyReadme(snapshot) {
     const review = markdown(parts[0])
     const scores = text(parts[1]).replace(/([★☆])\s+(?=[★☆])/g, '$1').replace(/\s*(稳定|速度|延迟|性价比)：\s*/g, '\n$1：').trim().split('\n')
     if (scores.length !== 4 || scores.some(s => !/^(稳定|速度|延迟|性价比)：[★☆]{5}$/.test(s))) throw Error('Invalid published score dimensions')
-    return `## ${post.rank}. [${markdown(post.title)}](https://tiantiance.blog${post.path})\n\n**评价：** ${review || '暂无评价。'}\n\n**打分：** ${scores.join(' · ')}`
+    return `### ${post.rank}. [${markdown(post.title)}](https://tiantiance.blog${post.path})\n\n**打分：** ${scores.join(' · ')}\n\n**评价：** ${review || '暂无评价。'}`
   })
-  return `# 每周评分榜\n\n${snapshot.week} 周榜\n\n${sections.length ? sections.join('\n\n') : '本周暂无已发布榜单。'}\n`
+  return `# 天天测｜机场实测与每周评分榜
+
+> 每天测试机场和免费节点。
+
+天天测（TTC）持续记录机场和免费节点的实测表现，保留每次测评的具体评价与多维评分，方便比较不同服务，也方便回看同一服务在不同时期的表现。
+
+[访问网站](https://tiantiance.blog/) · [每周评分榜](https://tiantiance.blog/weekly-ranking/) · [RSS 订阅](https://tiantiance.blog/feed.xml)
+
+## 如何阅读这份榜单
+
+- **看评分，也看评价。** 稳定、速度、延迟、性价比四个维度各以五星展示；评价补充当次测试的体验与条件。点击名称可查看完整测评。
+- **每周固定范围。** 每周一北京时间 14:00 截止，从最近 20 篇有效测评中按商家去重，每家采用最新一次测评，再按分数取前 10 家。
+- **保留当时的结果。** 榜单按周保存，展示该期已发布的评价和分数，反映对应测评时的表现。
+
+## 本周评分榜
+
+**${snapshot.week} 周榜 · ${sections.length} 家**
+
+${sections.length ? sections.join('\n\n---\n\n') : '本周暂无已发布榜单。'}
+
+---
+
+## 关于这个项目
+
+本站持续发布机场测速与测评，并整理每周评分榜。本仓库保存网站前端及已公开内容；这里的榜单与网站使用同一份已发布周榜，随内容发布自动更新。想阅读完整文章可以访问网站，也可以通过 RSS 跟进新内容。
+`
 }
 
 export function writeWeeklyReadme() {
