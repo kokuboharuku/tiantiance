@@ -1,3 +1,4 @@
+import { writeWeeklyReadme } from './weekly-readme.mjs';
 import {readdirSync,readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const unquote=s=>{s=s.trim();return /^'.*'$/.test(s)?s.slice(1,-1).replace(/''/g,"'"):s.startsWith('"')?JSON.parse(s):s};
@@ -16,3 +17,5 @@ page('subscribe','订阅更新','复制下面的 RSS 地址到你的阅读器：
 page('reading','阅读与周榜','本站展示天天测公开测评与已发布周榜。文章与周榜沿现有内容流程更新。\n\n## 如何阅读\n\n使用右上角搜索查找文章，也可以通过[专题](/topics/)或[归档](/archive/)浏览。历史价格和体验反映文章所述时间，请结合测试条件与发布日期。部分旧图片仍依赖原有图片服务。\n\n## 周榜规则\n\n原站周一北京时间 14:00 截止，取最近 20 篇有效测评后按商家去重，同商家保留最新一篇，再按评分取前 10；不向 20 篇之外补位。未确认商家与综合多商家文章不参与单商家排行。网站展示已发布周榜，不在访问页面时重新计算评分。\n\n## 交流与反馈\n\n[公开讨论](https://github.com/kokuboharuku/tiantiance/discussions) · [内容纠错](https://github.com/kokuboharuku/tiantiance/issues/new?template=correction.yml) · [Wiki](https://github.com/kokuboharuku/tiantiance/wiki)\n\n问题反馈请附文章链接、具体位置与观察时间，勿附凭据或私人订阅链接。');
 writeFileSync('data/articles.json',JSON.stringify(articles,null,2)+'\n');
 console.log(`Prepared discovery pages for ${articles.length} unchanged articles`);
+
+writeWeeklyReadme();
