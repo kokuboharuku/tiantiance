@@ -11,7 +11,7 @@ article: false
 
 - 2026-11-04 · [牛牛六元机场测速 ★ 10](/jccp/telefox-92c4500364d9fde50a11b0f1/)
 - 2026-11-03 · [云起机场测速 ★ 9](/jccp/telefox-b6f49d73388b51c810f6a6db/)
-- 2026-11-01 · [牛来机场测速 ★ 12](/jccp/telefox-cad212b316796d62c06de094/)
+- 2026-11-01 · [牛来机场测速 ★ 8](/jccp/telefox-cad212b316796d62c06de094/)
 
 ## 2026-10
 
