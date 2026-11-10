@@ -7,6 +7,7 @@ article: false
 
 依据原文总分归类。请结合文章日期与测试条件阅读。
 
+- 2026-11-09 · [NovoNET机场测速 ★ 9](/jccp/telefox-86b81e3c82a8ae6ddf253da8/)
 - 2026-11-09 · [我享云机场测速 ★ 8](/jccp/telefox-89ba810ed9146f958f5152d0/)
 - 2026-11-07 · [qi机场测速 ★ 8](/jccp/telefox-a353fe7e8f7f9fd6210a35e7/)
 - 2026-11-07 · [9527vpn机场测速 ★ 11](/jccp/telefox-f2123209c3a7e5a6768e6dd0/)
