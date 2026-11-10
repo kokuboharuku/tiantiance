@@ -15,4 +15,15 @@ assert(!readFileSync(root+'/robots.txt','utf8').includes('Disallow: /'),'Crawl s
 const feed=readFileSync(root+'/feed.xml','utf8');assert((feed.match(/<item>/g)||[]).length===articles.length,'RSS article coverage');
 const key=readFileSync('indexnow-key.txt','utf8').trim();assert(/^[a-z0-9-]{8,128}$/i.test(key)&&readFileSync(root+'/'+key+'.txt','utf8').trim()===key,'IndexNow verification file');
 assert(existsSync(root+'/social-card.png'),'Social preview missing');
+const ranking = JSON.parse(readFileSync('data/weekly-ranking.json', 'utf8'));
+const rankingHtml = readFileSync(root + '/weekly-ranking/index.html', 'utf8');
+const rankingHeadings = [...rankingHtml.matchAll(/<div class="vp-post-item(?: [^"]*)?"[^>]*>[\s\S]*?<h3[^>]*>([\s\S]*?)<\/h3>/g)]
+  .map(([, heading]) => heading);
+assert(rankingHeadings.length === ranking.posts.length, 'Weekly ranking HTML has an unexpected number of posts');
+for (const [index, post] of ranking.posts.entries()) {
+  const heading = rankingHeadings[index];
+  assert(post.available === false ? heading.includes('不可访问') && !heading.includes('href=') : heading.includes('href="' + post.path + '"'),
+    'Weekly ranking HTML post mismatch at rank ' + (index + 1));
+}
+console.log('Verified weekly ranking HTML: ' + ranking.posts.length + ' ordered posts');
 console.log(`Verified ${html.length} HTML, ${articles.length} unchanged articles, ${urls.length} sitemap URLs, RSS, 404 and metadata`);
