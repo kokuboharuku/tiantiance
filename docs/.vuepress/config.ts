@@ -36,6 +36,9 @@ export default defineUserConfig({
     // 配置站点图标
 //    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
       ['link', { rel: 'icon', type: 'image/svg+xml', href: '/ttc-logo.svg' }],
+      ['meta', { name: 'google-site-verification', content: 'AqNen0ajx1kPKB2nIkb_hHGfZVXziMYbpdmmh1XxktE' }],
+      ['meta', { name: 'msvalidate.01', content: '2B6F0D6E4F62AD545D4A23F8EFE75444' }],
+      ['meta', { name: 'yandex-verification', content: '8b8563c762e8e607' }],
       ['script', { defer: true, src: 'https://umami.gemcook.net/script.js', 'data-website-id': '5ee6f297-754a-46b7-ac67-91dc148a1025', 'data-domains': 'tiantiance.blog,www.tiantiance.blog' }],
       ['link', { rel: 'alternate', type: 'application/rss+xml', title: '天天测 RSS', href: 'https://tiantiance.blog/feed.xml' }]
   ],
