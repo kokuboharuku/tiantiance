@@ -1,4 +1,50 @@
 {
-    "week": "2026-11-02",
-    "posts": []
+    "week": "2026-11-09",
+    "posts": [
+        {
+            "path": "/jccp/telefox-a58cf58d651f0aa81c64857b/",
+            "title": "迷途猫机场测速（第2次） ★ 10",
+            "createTime": "2026/10/29 20:35:40",
+            "tags": [
+                "机场测评",
+                "每天测速"
+            ],
+            "categoryList": [],
+            "excerpt": "<p>晚高峰测试，速度比上次好了不少，三网都比较均衡，从频道来看，感觉机场的用户比较少</p><div class=\"ttc-rating-excerpt\"><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">稳定：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">速度：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">延迟：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">性价比：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span></div>",
+            "cover": null,
+            "lang": "zh-CN",
+            "rank": 1,
+            "available": true
+        },
+        {
+            "path": "/jccp/telefox-7c11acf32c55f080ee6d2eee/",
+            "title": "念云机场测速（第2次） ★ 10",
+            "createTime": "2026/10/25 19:55:47",
+            "tags": [
+                "机场测评",
+                "每天测速"
+            ],
+            "categoryList": [],
+            "excerpt": "<p>晚高峰测试，比上次史诗级削弱，确实是好用的很好用，难用的很难用，可惜可惜</p><div class=\"ttc-rating-excerpt\"><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">稳定：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">速度：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">延迟：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">性价比：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆</span></span></span></div>",
+            "cover": null,
+            "lang": "zh-CN",
+            "rank": 2,
+            "available": true
+        },
+        {
+            "path": "/jccp/0210072257366/",
+            "title": "猫七七机场测速 ★ 8",
+            "createTime": "2026/10/07 22:57:36",
+            "tags": [
+                "机场测评",
+                "每天测速"
+            ],
+            "categoryList": [],
+            "excerpt": "<p>晚高峰测试，部分节点有倍率，晚高峰速度不太行，稳定性也一般，波动比较频繁</p><div class=\"ttc-rating-excerpt\"><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">稳定：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">速度：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">延迟：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span><span class=\"ttc-rating-dimension\"><span class=\"ttc-rating-label\">性价比：</span><span class=\"ttc-rating-group\"><span class=\"ttc-rating-star\">★★</span><span class=\"ttc-rating-star ttc-rating-empty\">☆☆☆</span></span></span></div>",
+            "cover": null,
+            "lang": "zh-CN",
+            "rank": 3,
+            "available": true
+        }
+    ]
 }
