@@ -2,7 +2,7 @@
   "name": "tiantiance",
   "type": "module",
   "version": "1.0.0",
-  "description": "tiantiance independent static deployment trial",
+  "description": "天天测公开测评与周榜",
   "author": "kokuboharuku",
   "license": "MIT",
   "scripts": {
