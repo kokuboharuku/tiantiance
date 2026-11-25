@@ -1,5 +1,104 @@
 [
   {
+    "file": "review-9869f5f1d3c7fcb44cbabd26.md",
+    "title": "熊猫cloud机场测速 ★ 6",
+    "merchant": "熊猫cloud机场测速",
+    "path": "/jccp/9869f5f1d3c7fcb44cbabd26/",
+    "date": "2026-11-23",
+    "score": 6,
+    "hash": "ae5ed42c526e8d928f5e7c08db6290f4b0b90e9ae1492fda223c197f8160ee7f"
+  },
+  {
+    "file": "review-b834a4ebbc104f49453d008b.md",
+    "title": "吹雪云机场测速（第2次） ★ 13",
+    "merchant": "吹雪云机场测速",
+    "path": "/jccp/b834a4ebbc104f49453d008b/",
+    "date": "2026-11-22",
+    "score": 13,
+    "hash": "0d352b3adb3e278fab1b6d19159c84b1109ffd82473ea4a7dabdba72a8919f70"
+  },
+  {
+    "file": "review-55957c2cb18df046784db259.md",
+    "title": "桃花源机场测速 ★ 6",
+    "merchant": "桃花源机场测速",
+    "path": "/jccp/55957c2cb18df046784db259/",
+    "date": "2026-11-21",
+    "score": 6,
+    "hash": "93a595d94306ab13df464bf8c9392a701bf8c0e93dfecb61be34a241f160f848"
+  },
+  {
+    "file": "review-3af0af783a043049a5c093f3.md",
+    "title": "月之暗面Cloud机场测速 ★ 8",
+    "merchant": "月之暗面Cloud机场测速",
+    "path": "/jccp/3af0af783a043049a5c093f3/",
+    "date": "2026-11-20",
+    "score": 8,
+    "hash": "08bea565ccca61d226837f2e8d28b2cb98e046ab2ef40f951ea556821c8af1ec"
+  },
+  {
+    "file": "review-620b6f8d56bb75c4ec45a79d.md",
+    "title": "隐士机场测速 ★ 8",
+    "merchant": "隐士机场测速",
+    "path": "/jccp/620b6f8d56bb75c4ec45a79d/",
+    "date": "2026-11-19",
+    "score": 8,
+    "hash": "ec14fc53129e373a1cdb9f6243100e5a5b85a3df79dbc75cd24f7c9eb4c8b92e"
+  },
+  {
+    "file": "review-f873432b2e2989806f88ce6e.md",
+    "title": "miaoport机场测速 ★ 12",
+    "merchant": "miaoport机场测速",
+    "path": "/jccp/f873432b2e2989806f88ce6e/",
+    "date": "2026-11-18",
+    "score": 12,
+    "hash": "1a47fc217145eaf724e8c68bba2e39c4d6858d77124638292a8f4c8f811b3626"
+  },
+  {
+    "file": "review-ab05f4921cc9e0a24a7a68cf.md",
+    "title": "Lumina机场测速（第2次） ★ 11",
+    "merchant": "Lumina机场测速",
+    "path": "/jccp/ab05f4921cc9e0a24a7a68cf/",
+    "date": "2026-11-17",
+    "score": 11,
+    "hash": "014add9da6f30edac51009400f5a81c23fc062c803c58f085b829fe51e8c955b"
+  },
+  {
+    "file": "review-a4a2619b2bbc455c9f0abcf4.md",
+    "title": "闪电狐机场测速（第2次） ★ 8",
+    "merchant": "闪电狐机场测速",
+    "path": "/jccp/a4a2619b2bbc455c9f0abcf4/",
+    "date": "2026-11-16",
+    "score": 8,
+    "hash": "9e50c94d47a0b619011e9689230453ba362f93a782e4671144d15d926b02deb9"
+  },
+  {
+    "file": "review-dd41b42e1301d33c5c93d6fb.md",
+    "title": "云起机场测速（第2次） ★ 7",
+    "merchant": "云起机场测速",
+    "path": "/jccp/dd41b42e1301d33c5c93d6fb/",
+    "date": "2026-11-16",
+    "score": 7,
+    "hash": "e70ba554c8103b2d4ec3f63bebb4e44ee70470108cee2d48e1c6fcf4d2e6f6b7"
+  },
+  {
+    "file": "review-2cd771e700cf7b05590d5654.md",
+    "title": "吹雪云机场测速 ★ 15",
+    "merchant": "吹雪云机场测速",
+    "path": "/jccp/2cd771e700cf7b05590d5654/",
+    "date": "2026-11-14",
+    "score": 15,
+    "hash": "03a1ff4a0caf205099eec7a8243312ce97202b933a81b2df08736b8ec99bdbe1"
+  },
+  {
+    "file": "review-495d33e25f11d5ddeb6bc508.md",
+    "title": "浮云网络机场测速 ★ 10",
+    "merchant": "浮云网络机场测速",
+    "path": "/jccp/495d33e25f11d5ddeb6bc508/",
+    "date": "2026-11-14",
+    "score": 10,
+    "hash": "dc45f4843980a756a9d351d62f7abf5cf54abeced0bb0eff08113baa89468542"
+  },
+  {
     "file": "review-47ebdee666f9d8601c84769c.md",
     "title": "山水云机场测速 ★ 5",
     "merchant": "山水云机场测速",
@@ -7,6 +106,24 @@
     "date": "2026-11-13",
     "score": 5,
     "hash": "a298fcc027c015a397dff3040bb1475679f8e49acccd9602d141cf001c30b9b5"
+  },
+  {
+    "file": "review-140cb9cfa9e4b57198f3b66a.md",
+    "title": "toconect机场测速 ★ 8",
+    "merchant": "toconect机场测速",
+    "path": "/jccp/140cb9cfa9e4b57198f3b66a/",
+    "date": "2026-11-12",
+    "score": 8,
+    "hash": "267d24cb536a3a060382c811e133b905b46acba6969c25b7aaaf4e42a3ddacae"
+  },
+  {
+    "file": "review-38efe2a36cca6d527bdc39ad.md",
+    "title": "柚子兔网络机场测速 ★ 12",
+    "merchant": "柚子兔网络机场测速",
+    "path": "/jccp/38efe2a36cca6d527bdc39ad/",
+    "date": "2026-11-12",
+    "score": 12,
+    "hash": "841db5f79459eb0f10bf5040d0b1cd9a17f3da56b6b8063519c4b7a16e59fec4"
   },
   {
     "file": "review-a419d65fcc90d6a3a5d32a8c.md",
