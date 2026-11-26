@@ -10,6 +10,6 @@ article: false
 - [16–20 分](/topics/score-16/)（4 篇）
 - [12–15 分](/topics/score-12/)（58 篇）
 - [8–11 分](/topics/score-8/)（57 篇）
-- [低于 8 分](/topics/score-under-8/)（21 篇）
+- [低于 8 分](/topics/score-under-8/)（22 篇）
 
 [全部归档](/archive/) · [周榜说明](/reading/)
