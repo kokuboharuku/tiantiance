@@ -8,7 +8,7 @@ tags:
   - 每天测速
 titleSeries: OK云机场测速
 titleSequence: 1
-excerpt: '<p>晚高峰测试，有国内入口，整体速度还不错，比较均衡，后期如果能够长期稳定这个质量的话那还是挺不错的</p><div class="tiantiance-rating-excerpt"><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">稳定：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">速度：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">延迟：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">性价比：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span></div>'
+excerpt: '<p>晚高峰测试，有国内入口，整体速度还不错，比较均衡，后期如果能够长期稳定这个质量的话那还是挺不错的 2026年11月26日更新：国内入口已经没了，暂时不建议购买 2026年11月26日更新：国内入口已经没了，暂时不建议购买</p><div class="tiantiance-rating-excerpt"><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">稳定：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">速度：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">延迟：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span><span class="tiantiance-rating-dimension"><span class="tiantiance-rating-label">性价比：</span><span class="tiantiance-rating-group"><span class="tiantiance-rating-star">★★★</span><span class="tiantiance-rating-star tiantiance-rating-empty">☆☆</span></span></span></div>'
 baseTitle: OK云机场测速
 scores:
   稳定:
@@ -40,6 +40,9 @@ scoreVersion: 1
 ::: important 天天测点评  
 <div v-pre>
 <p>晚高峰测试，有国内入口，整体速度还不错，比较均衡，后期如果能够长期稳定这个质量的话那还是挺不错的</p>
+
+<p>2026年11月26日更新：国内入口已经没了，暂时不建议购买</p>
+<p>2026年11月26日更新：国内入口已经没了，暂时不建议购买</p>
 
 </div>
 :::  
