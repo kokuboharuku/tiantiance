@@ -7,6 +7,7 @@ const xml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(d,e.name)):[join(d,e.name)]);
 const paths=[];
 for(const file of walk(root).filter(f=>f.endsWith('.html'))){let s=readFileSync(file,'utf8');const name=relative(root,file);const path='/'+name.replace(/index\.html$/,'');
+ if (/^\/jccp\/[a-z][a-z0-9]*-[0-9a-f]{24}\/$/.test(path) && s.includes('<meta http-equiv="refresh"')) continue;
  s=s.replace(/<link\b[^>]*rel="canonical"[^>]*>/g,'').replace(/<meta\b[^>]*(?:property="(?:og:[^"]+|article:[^"]+)"|name="(?:twitter:[^"]+|robots)")[^>]*>/g,'');
  if(name==='404.html'){s=s.replace('</head>','<meta name="robots" content="noindex,follow"></head>');writeFileSync(file,s);continue}
  const article=articles.find(a=>a.path===path);const title=article?.title||(s.match(/<title>([^<]*)<\/title>/)?.[1]||'天天测');

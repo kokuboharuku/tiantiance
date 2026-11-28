@@ -8,8 +8,17 @@ const files=walk(root),html=files.filter(f=>f.endsWith('.html'));
 const articles=JSON.parse(readFileSync('data/articles.json','utf8'));
 assert(articles.length===JSON.parse(readFileSync('snapshot.json','utf8')).articles,'Content manifest article count mismatch');
 for(const a of articles){assert(createHash('sha256').update(readFileSync('docs/jccp/'+a.file)).digest('hex')===a.hash,'Article content changed');const s=readFileSync(root+a.path+'index.html','utf8');assert(s.includes(a.path)&&s.includes('application/ld+json')&&s.includes('相关测评')&&s.includes('复制文章链接'),'Missing article reading/discovery features: '+a.path)}
+let fallbackCount=0;
 for(const f of html){const s=readFileSync(f,'utf8');
-const trackers=[...s.matchAll(/<script\b[^>]*\bdata-website-id="([^"]+)"[^>]*>/g)];assert(trackers.length===1&&trackers[0][1]==='5ee6f297-754a-46b7-ac67-91dc148a1025','Missing or unexpected analytics website');assert(trackers[0][0].includes('src="https://umami.gemcook.net/script.js"')&&trackers[0][0].includes('data-domains="tiantiance.blog,www.tiantiance.blog"'),'Analytics script or production domain scope mismatch');if(f.endsWith('/404.html')){assert(s.includes('noindex')&&!s.includes('rel="canonical"'),'404 indexing guard');continue}assert(!s.includes('noindex'),'Unexpected noindex: '+f);assert((s.match(/rel="canonical"/g)||[]).length===1,'Canonical uniqueness');assert(s.includes('property="og:image"')&&s.includes('summary_large_image'),'Share metadata');}
+const legacy=f.match(/\/jccp\/[a-z][a-z0-9]*-([a-f0-9]{24})\/index\.html$/);
+if(legacy&&s.includes('<meta http-equiv="refresh"')){
+  const target='/jccp/review-'+legacy[1]+'/';
+  assert(articles.some(article=>article.path===target),'Fallback must address an article');
+  assert(s.includes('content="0;url='+base+target+'"')&&s.includes('name="robots" content="noindex,follow"')&&s.includes('rel="canonical" href="'+base+target+'"'),'Malformed fallback');
+  fallbackCount++;
+  continue;
+}const trackers=[...s.matchAll(/<script\b[^>]*\bdata-website-id="([^"]+)"[^>]*>/g)];assert(trackers.length===1&&trackers[0][1]==='5ee6f297-754a-46b7-ac67-91dc148a1025','Missing or unexpected analytics website');assert(trackers[0][0].includes('src="https://umami.gemcook.net/script.js"')&&trackers[0][0].includes('data-domains="tiantiance.blog,www.tiantiance.blog"'),'Analytics script or production domain scope mismatch');if(f.endsWith('/404.html')){assert(s.includes('noindex')&&!s.includes('rel="canonical"'),'404 indexing guard');continue}assert(!s.includes('noindex'),'Unexpected noindex: '+f);assert((s.match(/rel="canonical"/g)||[]).length===1,'Canonical uniqueness');assert(s.includes('property="og:image"')&&s.includes('summary_large_image'),'Share metadata');}
+assert(fallbackCount===23,'Unexpected transitional redirect count');
 for(const p of ['/topics/','/archive/','/subscribe/','/reading/'])assert(existsSync(root+p+'index.html'),'Missing discovery page');
 const sitemap=readFileSync(root+'/sitemap.xml','utf8');const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);assert(new Set(urls).size===urls.length,'Duplicate sitemap URL');for(const u of urls){assert(u.startsWith(base+'/')&&!u.endsWith('404.html'),'Invalid sitemap URL');let p=u.slice(base.length);assert(existsSync(root+p+(p.endsWith('/')?'index.html':'')),'Sitemap target missing: '+p)}
 assert(!readFileSync(root+'/robots.txt','utf8').includes('Disallow: /'),'Crawl still blocked');
